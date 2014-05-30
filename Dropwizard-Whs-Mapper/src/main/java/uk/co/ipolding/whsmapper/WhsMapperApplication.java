@@ -24,7 +24,7 @@ public class WhsMapperApplication extends Application<WhsMapperConfiguration>{
 	public void run(WhsMapperConfiguration configuration, Environment environment)throws ClassNotFoundException{
 
 		final DBIFactory factory = new DBIFactory();
-    	final DBI jdbi = factory.build(environment, configuration.getDataSourceFactory(), "h2");
+    	final DBI jdbi = factory.build(environment, configuration.getDataSourceFactory(), "sqlite");
     	final WhsDao dao = jdbi.onDemand(WhsDao.class); // this creates an object that implements the Dao interface.
         System.out.println("text from within run");
 		environment.jersey().register(new WhsResource(dao));

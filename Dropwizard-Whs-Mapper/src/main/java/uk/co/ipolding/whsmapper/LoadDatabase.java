@@ -10,11 +10,13 @@ import uk.co.ipolding.whsmapper.xmlparser.WorldHeritageSiteParser;
 import java.util.List;
 
 import static uk.co.ipolding.whsmapper.DatabaseConfiguration.getH2DatabaseInstance;
+import static uk.co.ipolding.whsmapper.DatabaseConfiguration.getSQLiteDatabaseInstance;
 
 public class LoadDatabase
 {
 
     public static void main( String[] args ) throws Exception {
+
         System.out.println("Hello World!");
 
         WorldHeritageSiteParser parser = new WorldHeritageSiteParser();
@@ -28,7 +30,7 @@ public class LoadDatabase
 
         List<WorldHeritageSite> siteList = parser.getWorldHeritageSite(documentWhs);
 
-        DBI dbi = getH2DatabaseInstance();
+        DBI dbi = getSQLiteDatabaseInstance();
         WhsDao dao = dbi.open(WhsDao.class);
 
         dao.createSiteTable();
@@ -40,5 +42,6 @@ public class LoadDatabase
 //            System.out.print(name);
         }
         dao.close();
+
     }
 }

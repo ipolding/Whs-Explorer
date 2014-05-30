@@ -79,7 +79,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.h2database:h2:1.4.178" level="project" />
     <orderEntry type="library" name="Maven: org.wisdom-framework:sqlite-jdbc:3.7.2_1" level="project" />
-    <orderEntry type="library" name="Maven: org.xerial:sqlite-jdbc:3.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xerial:sqlite-jdbc:3.7.15-M1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.felix:org.apache.felix.ipojo.annotations:1.11.2" level="project" />
     <orderEntry type="library" name="Maven: org.wisdom-framework:abstract-jdbc-driver:0.4" level="project" />
   </component>
