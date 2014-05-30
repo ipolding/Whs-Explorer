@@ -7,9 +7,9 @@
       <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-      <!--
+    
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4bVZ5sd6z-swRb0Sehp6WtmnEyi_5GJY&sensor=false"></script>
-    -->
+    
       <script src="angular.js"></script>
       <script src="js/init_map.js"></script>
       <script src="js/app.js"></script>
@@ -35,8 +35,6 @@ Results: <div ng-show="searchTerm" ng-repeat="site in filtered = (sites | filter
 </div>
 </div>
 </form>
-
-
     <form id="manualMarkers" ng-submit="addMarkerManually()" >
 
 <table>
@@ -62,8 +60,10 @@ Results: <div ng-show="searchTerm" ng-repeat="site in filtered = (sites | filter
     </form>
 
 
-<div id="map-canvas"/>
- 
+
+<div id="map-canvas">
+
+ </div>
 </section>
   
  
