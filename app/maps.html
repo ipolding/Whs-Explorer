@@ -29,9 +29,7 @@ Search: <input ng-model="searchTerm" >
 <div id="searchResults">
 Results: <div ng-show="searchTerm" ng-repeat="site in filtered = (sites | filter: searchTerm)">
     {{site.name}}
-    <br>
-    Latitude: {{site.latitude}}
-    Longitude: {{site.longitude}}<button ng-click="addMarker(site.latitude, site.longitude)">Map me</button >
+    <button ng-click="addMarker(site.latitude, site.longitude)">Map me</button >
 </div>
 </div>
 </form>
