@@ -25,14 +25,14 @@ whsMapper.controller('MapCtrl', ['$scope', '$resource',
 
 		};
 
-		// $scope.addMarkerManually = function() {
-		// 	var myLatlng = new google.maps.LatLng($scope.latitude, $scope.longitude);
-  // 			var marker = new google.maps.Marker({
+		$scope.addMarkerManually = function() {
+			var myLatlng = new google.maps.LatLng($scope.latitude, $scope.longitude);
+  			var marker = new google.maps.Marker({
         	
-  //       	position: myLatlng,
-  //       	map: map,
-  //       	title:"Hello World!"});
-		// };
+        	position: myLatlng,
+        	map: map,
+        	title:"Hello World!"});
+		};
 			
 		}
 
