@@ -19,40 +19,54 @@
 
   <header>UNESCO World Heritage Site Explorer</header>
 <body ng-controller="MapCtrl">
-   <br>
-    <section>
+   
+    <section id="middle">
 <h3 id="instructions">Search for a World Heritage Site below:</h3>
 
-     <form id="searchControls" ng-submit="addMarkerManually()" >
+<form id="searchBox">
+Search: <input ng-model="searchTerm" >
 
-  Latitude: <input required
+<div id="searchResults">
+Results: <div ng-show="searchTerm" ng-repeat="site in filtered = (sites | filter: searchTerm)">
+    {{site.name}}
+    <br>
+    Latitude: {{site.latitude}}
+    Longitude: {{site.longitude}}<button ng-click="addMarker(site.latitude, site.longitude)">Map me</button >
+</div>
+</div>
+</form>
+
+
+    <form id="manualMarkers" ng-submit="addMarkerManually()" >
+
+<table>
+  
+  <tr>Latitude:  
+    <input required
               name="latitude" min="-90" max="90" 
               type="number" 
               ng-model="latitude" >
-
-  Longitude: <input required 
+</tr>
+<tr>
+  Longitude:<input required 
                 name="longitude" min="-180" max="180"
                 type="number" 
                 ng-model="longitude"
                 ngMinLength 
                 style: "float: right;">
-             <input type="submit" id="submit" value="Add Marker" />
- <br>
- <br> 
-Search: <input ng-model="searchTerm" >
-    </li>
-</form>
-<br>
-Results: <li ng-show="searchTerm" ng-repeat="site in filtered = (sites | filter: searchTerm)">
-    <lable>Name:</label> {{site.name}}
-    Latitude: {{site.latitude}}
-    Longitude: {{site.longitude}}<button ng-click="addMarker(site.latitude, site.longitude)">Map me</button >
-  </tr>
+    </tr>
+<tr>
+    <input type="submit" id="submit" value="Add Marker" />
+</tr>
+  </table>
+    </form>
 
-  </div>
+
+<div id="map-canvas"/>
+ 
 </section>
   
- <div id="map-canvas"/>
+ 
 
 
   </body>

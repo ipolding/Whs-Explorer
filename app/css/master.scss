@@ -1,8 +1,8 @@
-html { 
-	}
+$headerColor: red;
+$mainBackgroundColor: blue;
 
 header {
-	background-color: blue;
+	background-color: $headerColor;
 	text-align: center;
 	font-size: 60px;
 }
@@ -10,7 +10,7 @@ header {
       
 body { 
 	
-	background-color: azure;
+	background-color: $mainBackgroundColor;
 	margin-left: auto;
 	margin-right: auto;
 	
