@@ -1,0 +1,37 @@
+html { 
+	}
+
+header {
+	text-align: center;
+	font-size: 60px;
+}
+
+      
+body { 
+	
+	 
+	margin-left: auto;
+	margin-right: auto;
+	
+	 }
+
+section {
+	
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#searchControls {
+	border: solid;
+}
+
+#instructions {
+	text-align: center;
+}
+	 
+
+#map-canvas { 
+	height: 100%;
+	width: 50%; }
