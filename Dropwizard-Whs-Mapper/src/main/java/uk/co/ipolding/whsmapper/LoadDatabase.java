@@ -7,6 +7,7 @@ import uk.co.ipolding.whsmapper.jdbi.WhsDao;
 import uk.co.ipolding.whsmapper.core.WorldHeritageSite;
 import uk.co.ipolding.whsmapper.xmlparser.WorldHeritageSiteParser;
 
+import java.sql.DriverManager;
 import java.util.List;
 
 import static uk.co.ipolding.whsmapper.DatabaseConfiguration.getH2DatabaseInstance;

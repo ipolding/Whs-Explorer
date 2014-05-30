@@ -1,13 +1,18 @@
 database:
 
   # the name of your JDBC driver
-  driverClass: org.h2.Driver
+  driverClass: org.sqlite.JDBC
   # the JDBC URL
-  url: jdbc:h2:tcp://localhost/~/test
-  # the username
+  url: "jdbc:sqlite:sites.db"
   user: ian
   # the password
   password: password
+
+  #url: jdbc:h2:tcp://localhost/~/test
+  # the username
+  #user: ian
+  # the password
+  #password: password
 
 
 
