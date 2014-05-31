@@ -10,6 +10,8 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
+import static uk.co.ipolding.whsmapper.jdbi.DatabaseLoader.loadDatabase;
+
 public class WhsMapperApplication extends Application<WhsMapperConfiguration>{
 	
 	public static void main (String[] args) throws Exception {
@@ -19,9 +21,16 @@ public class WhsMapperApplication extends Application<WhsMapperConfiguration>{
 	@Override
 	public void initialize(Bootstrap<WhsMapperConfiguration> bootstrap){
 //		Nothing to do yet
+        try {
+            loadDatabase();
+        } catch (Exception e) {
+            System.out.println(e.toString());
+        }
 		}
-	
-	public void run(WhsMapperConfiguration configuration, Environment environment)throws ClassNotFoundException{
+
+
+
+    public void run(WhsMapperConfiguration configuration, Environment environment)throws ClassNotFoundException{
 
 		final DBIFactory factory = new DBIFactory();
     	final DBI jdbi = factory.build(environment, configuration.getDataSourceFactory(), "sqlite");

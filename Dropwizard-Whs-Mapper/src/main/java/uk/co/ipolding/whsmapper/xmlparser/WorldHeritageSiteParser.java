@@ -43,7 +43,8 @@ public class WorldHeritageSiteParser {
        XPath xpath = xPathFactory.newXPath();
        XPathExpression expr = null;
 
-       for (int i = 1; i <= numberOfSites; i++)
+//       for (int i = 1; i <= numberOfSites; i++)
+       for (int i = 1; i <= 10; i++)
            {
 
                WorldHeritageSite site = new WorldHeritageSite();

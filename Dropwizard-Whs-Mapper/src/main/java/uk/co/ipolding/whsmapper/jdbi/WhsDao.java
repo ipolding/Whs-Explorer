@@ -14,7 +14,10 @@ import java.util.List;
  */
 public interface WhsDao {
 
-    @SqlUpdate("CREATE TABLE SITES (ID INT PRIMARY KEY, NAME VARCHAR(200), DESCRIPTION VARCHAR(1704), LATITUDE DOUBLE PRECISION NOT NULL, LONGITUDE DOUBLE PRECISION NOT NULL)")
+    @SqlQuery("SELECT count(*) FROM sites where id > 0")
+    int countRecordsInSiteTable();
+
+    @SqlUpdate("CREATE TABLE IF NOT EXISTS SITES (ID INT PRIMARY KEY, NAME VARCHAR(200), DESCRIPTION VARCHAR(1704), LATITUDE DOUBLE PRECISION NOT NULL, LONGITUDE DOUBLE PRECISION NOT NULL)")
     void createSiteTable();
 
     @SqlUpdate("insert into sites (id, name, description, latitude, longitude) values (:id, :name, :description, :latitude, :longitude)")

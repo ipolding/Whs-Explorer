@@ -37,11 +37,15 @@ public class LoadDatabase
         dao.createSiteTable();
 
         for (WorldHeritageSite site : siteList) {
+
             if (dao.findNameById(site.getId())==null)
                 dao.insert(site.getId(), site.getName(), site.getDescription(), site.getLatitude(), site.getLongitude());
 //            String name = dao.findNameById(1);
 //            System.out.print(name);
-        }
+                    }
+
+        System.out.println(dao.findById(2).getName());
+
         dao.close();
 
     }
