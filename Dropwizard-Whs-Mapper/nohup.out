@@ -1,0 +1,287 @@
+Hello World!
+Prehistoric Pile dwellings around the Alps
+text from within run
+INFO  [2014-06-02 21:36:24,458] io.dropwizard.server.ServerFactory: Starting WhsMapperApplication
+Exception in thread "main" WARN  [2014-06-02 21:36:24,623] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.Server@27872a2e: java.lang.RuntimeException: java.net.BindException: Address already in use
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_55]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+ERROR [2014-06-02 21:36:24,624] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_55]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+	at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+	at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+	at io.dropwizard.cli.Cli.run(Cli.java:70)
+	at io.dropwizard.Application.run(Application.java:72)
+	at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264)
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200)
+	... 8 more
+Hello World!
+Prehistoric Pile dwellings around the Alps
+text from within run
+INFO  [2014-06-02 21:36:56,138] io.dropwizard.server.ServerFactory: Starting WhsMapperApplication
+Exception in thread "main" WARN  [2014-06-02 21:36:56,273] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.Server@27872a2e: java.lang.RuntimeException: java.net.BindException: Address already in use
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_55]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+	at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+	at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+	at io.dropwizard.cli.Cli.run(Cli.java:70)
+	at io.dropwizard.Application.run(Application.java:72)
+	at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264)
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200)
+	... 8 more
+ERROR [2014-06-02 21:36:56,274] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_55]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Hello World!
+Prehistoric Pile dwellings around the Alps
+text from within run
+INFO  [2014-06-02 21:38:01,362] io.dropwizard.server.ServerFactory: Starting WhsMapperApplication
+Exception in thread "main" WARN  [2014-06-02 21:38:01,492] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.Server@27872a2e: java.lang.RuntimeException: java.net.BindException: Address already in use
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_55]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+ERROR [2014-06-02 21:38:01,492] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_55]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+	at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+	at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+	at io.dropwizard.cli.Cli.run(Cli.java:70)
+	at io.dropwizard.Application.run(Application.java:72)
+	at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264)
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200)
+	... 8 more
+Hello World!
+Prehistoric Pile dwellings around the Alps
+text from within run
+INFO  [2014-06-02 21:38:42,301] io.dropwizard.server.ServerFactory: Starting WhsMapperApplication
+Exception in thread "main" java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43)
+	at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43)
+	at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76)
+	at io.dropwizard.cli.Cli.run(Cli.java:70)
+	at io.dropwizard.Application.run(Application.java:72)
+	at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264)
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200)
+	... 8 more
+WARN  [2014-06-02 21:38:42,432] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.Server@27872a2e: java.lang.RuntimeException: java.net.BindException: Address already in use
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_55]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+ERROR [2014-06-02 21:38:42,432] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_55]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_55]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_55]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) ~[DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+! at uk.co.ipolding.whsmapper.WhsMapperApplication.main(WhsMapperApplication.java:18) [DropWizard-Whs-Mapper-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Hello World!
+Prehistoric Pile dwellings around the Alps
+text from within run
+INFO  [2014-06-16 20:14:37,855] io.dropwizard.server.ServerFactory: Starting WhsMapperApplication
+INFO  [2014-06-16 20:14:37,991] org.eclipse.jetty.setuid.SetUIDListener: Opened application@f00cb1e{HTTP/1.1}{0.0.0.0:1990}
+INFO  [2014-06-16 20:14:37,991] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@7d172643{HTTP/1.1}{0.0.0.0:1991}
+INFO  [2014-06-16 20:14:37,995] org.eclipse.jetty.server.Server: jetty-9.0.z-SNAPSHOT
+INFO  [2014-06-16 20:14:38,272] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-06-16 20:14:38,431] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /whs/all (uk.co.ipolding.whsmapper.resources.WhsResource)
+    GET     /whs/site (uk.co.ipolding.whsmapper.resources.WhsResource)
+
+INFO  [2014-06-16 20:14:39,241] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1a738e7a{/,null,AVAILABLE}
+INFO  [2014-06-16 20:14:39,244] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-06-16 20:14:39,260] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@528af725{/,null,AVAILABLE}
+INFO  [2014-06-16 20:14:39,281] org.eclipse.jetty.server.ServerConnector: Started application@f00cb1e{HTTP/1.1}{0.0.0.0:1990}
+INFO  [2014-06-16 20:14:39,282] org.eclipse.jetty.server.ServerConnector: Started admin@7d172643{HTTP/1.1}{0.0.0.0:1991}
+127.0.0.1 -  -  [16/Jun/2014:20:14:46 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36" 439
+127.0.0.1 -  -  [16/Jun/2014:20:15:40 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" 142
+86.153.91.36 -  -  [16/Jun/2014:20:17:13 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Linux; Android 4.4.3; Nexus 4 Build/KTU84L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36" 142
+127.0.0.1 -  -  [16/Jun/2014:20:19:52 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" 158
+127.0.0.1 -  -  [16/Jun/2014:20:25:57 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" 117
+127.0.0.1 -  -  [16/Jun/2014:20:26:35 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" 239
+127.0.0.1 -  -  [16/Jun/2014:20:27:13 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" 101
+127.0.0.1 -  -  [16/Jun/2014:20:27:58 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36" 101
+127.0.0.1 -  -  [16/Jun/2014:20:31:55 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36" 87
+127.0.0.1 -  -  [16/Jun/2014:21:25:02 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36" 119
+127.0.0.1 -  -  [17/Jun/2014:11:58:09 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" 129
+127.0.0.1 -  -  [17/Jun/2014:13:24:00 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" 134
+127.0.0.1 -  -  [18/Jun/2014:10:42:54 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" 102
+127.0.0.1 -  -  [18/Jun/2014:10:46:20 +0000] "GET /whs/all HTTP/1.0" 200 - "http://whs.ipolding.co.uk/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36" 88
